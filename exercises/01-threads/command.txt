@@ -1,0 +1,1 @@
+./build/bin/llama-bench -m ~/models/phi-3-mini-q4_k_m.gguf -p 512 -n 128 -r 5 -t 1,2,3,4,6,8
