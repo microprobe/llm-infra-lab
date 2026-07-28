@@ -1,0 +1,5 @@
+./build/bin/llama-bench -m ~/models/phi-3-mini-q4_k_m.gguf -p 512 -n 128 -r 5
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | --------------: | -------------------: |
+| phi3 3B Q4_K - Medium          |   2.23 GiB |     3.82 B | CPU        |       4 |           pp512 |         32.20 ± 0.28 |
+| phi3 3B Q4_K - Medium          |   2.23 GiB |     3.82 B | CPU        |       4 |           tg128 |         11.25 ± 0.05 |
