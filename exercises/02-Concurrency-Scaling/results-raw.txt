@@ -1,0 +1,42 @@
+0.00.046.059 W load: control-looking token:  32007 '<|end|>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.051.285 W load: control-looking token:  32000 '<|endoftext|>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.18.204.750 W llama_context: n_ctx_seq (256) < n_ctx_train (4096) -- the full capacity of the model will not be utilized
+
+llama_batched_bench: n_kv_max = 4096, n_batch = 2048, n_ubatch = 512, flash_attn = -1, is_pp_shared = 0, is_tg_separate = 0, n_gpu_layers = -1, n_threads = 4, n_threads_batch = 4
+
+|    PP |     TG |    B |   N_KV |   T_PP s | S_PP t/s |   T_TG s | S_TG t/s |      T s |    S t/s |
+|-------|--------|------|--------|----------|----------|----------|----------|----------|----------|
+|   128 |    128 |    1 |    256 |    3.844 |    33.30 |   12.822 |     9.98 |   16.666 |    15.36 |
+|   128 |    128 |    2 |    512 |    7.706 |    33.22 |   21.486 |    11.91 |   29.192 |    17.54 |
+|   128 |    128 |    4 |   1024 |   15.381 |    33.29 |   31.035 |    16.50 |   46.415 |    22.06 |
+|   128 |    128 |    8 |   2048 |   30.590 |    33.47 |   57.401 |    17.84 |   87.992 |    23.27 |
+|   128 |    128 |   16 |   4096 |   67.782 |    30.21 |  100.346 |    20.41 |  168.127 |    24.36 |
+
+0.00.032.966 W load: control-looking token:  32007 '<|end|>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.038.199 W load: control-looking token:  32000 '<|endoftext|>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.019.498 W llama_context: n_ctx_seq (256) < n_ctx_train (4096) -- the full capacity of the model will not be utilized
+
+llama_batched_bench: n_kv_max = 4096, n_batch = 2048, n_ubatch = 512, flash_attn = -1, is_pp_shared = 0, is_tg_separate = 0, n_gpu_layers = -1, n_threads = 4, n_threads_batch = 4
+
+|    PP |     TG |    B |   N_KV |   T_PP s | S_PP t/s |   T_TG s | S_TG t/s |      T s |    S t/s |
+|-------|--------|------|--------|----------|----------|----------|----------|----------|----------|
+|   128 |    128 |    1 |    256 |    3.864 |    33.13 |   12.736 |    10.05 |   16.600 |    15.42 |
+|   128 |    128 |    2 |    512 |    7.667 |    33.39 |   21.506 |    11.90 |   29.174 |    17.55 |
+|   128 |    128 |    4 |   1024 |   15.337 |    33.38 |   31.041 |    16.49 |   46.378 |    22.08 |
+|   128 |    128 |    8 |   2048 |   30.793 |    33.25 |   57.240 |    17.89 |   88.033 |    23.26 |
+|   128 |    128 |   16 |   4096 |   67.415 |    30.38 |  100.670 |    20.34 |  168.084 |    24.37 |
+
+0.00.033.603 W load: control-looking token:  32007 '<|end|>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.00.039.148 W load: control-looking token:  32000 '<|endoftext|>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.052.540 W llama_context: n_ctx_seq (256) < n_ctx_train (4096) -- the full capacity of the model will not be utilized
+
+llama_batched_bench: n_kv_max = 4096, n_batch = 2048, n_ubatch = 512, flash_attn = -1, is_pp_shared = 0, is_tg_separate = 0, n_gpu_layers = -1, n_threads = 4, n_threads_batch = 4
+
+|    PP |     TG |    B |   N_KV |   T_PP s | S_PP t/s |   T_TG s | S_TG t/s |      T s |    S t/s |
+|-------|--------|------|--------|----------|----------|----------|----------|----------|----------|
+|   128 |    128 |    1 |    256 |    3.908 |    32.75 |   12.733 |    10.05 |   16.641 |    15.38 |
+|   128 |    128 |    2 |    512 |    7.785 |    32.88 |   21.510 |    11.90 |   29.295 |    17.48 |
+|   128 |    128 |    4 |   1024 |   15.323 |    33.41 |   30.798 |    16.62 |   46.122 |    22.20 |
+|   128 |    128 |    8 |   2048 |   30.531 |    33.54 |   56.862 |    18.01 |   87.393 |    23.43 |
+|   128 |    128 |   16 |   4096 |   66.919 |    30.60 |   99.982 |    20.48 |  166.902 |    24.54 |
+
